@@ -1,10 +1,11 @@
 # from aiogram import Bot, Dispatcher, types, F
 # from aiogram.filters import Command
 # from aiogram.utils.keyboard import InlineKeyboardBuilder
-# from config import token
+# from dotenv import load_dotenv
+# load_dotenv()
 # import asyncio
 
-# bot = Bot(token=token)
+# bot = Bot(token='7619899113:AAGlZM3r-XI58HJkZwR6iKcChyVkLFB9knc')
 # dp = Dispatcher()
 
 # AVTO = {
@@ -99,7 +100,7 @@
 #         )
 
 #         await callback.message.answer(
-#             f"Ваш заказ: {spares if category == 'avto' else zap} x {quantity} = {price} сомов.\nПодтвердите заказ?",
+#             f"Ваш заказ: {spares if category == 'avto' else zap} x {quantity} = {price} сомов.\nПодтвердить заказ?",
 #             reply_markup=builder.as_markup()
 #         )
 
@@ -121,7 +122,7 @@
 #         del orders[user_id]
 
 #         await callback.message.answer(
-#             f"Спасибо за заказ!\nВы заказали: {spares if category == 'avto' else zap} x {quantity}.\nИтог к оплате: {total_price} сомов"
+#             f"Спасибо за заказ!\nВы заказали: {spares if category == 'avto' else zap} x {quantity}.\nИтого к оплате: {total_price} сомов"
 #         )
 
 # async def main():
